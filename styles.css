@@ -1,0 +1,293 @@
+.fadein1 {
+  opacity:0;
+    animation: fadein 2s;
+  animation-delay:.2s;
+  animation-fill-mode: forwards;
+}
+.fadein2 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:.6s;
+  animation-fill-mode: forwards;
+}
+.fadein3 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:1s;
+  animation-fill-mode: forwards;
+}
+.fadein4 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:1.4s;
+  animation-fill-mode: forwards;
+}
+.fadein5 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:1.8s;
+  animation-fill-mode: forwards;
+}
+.fadein6 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:2.2s;
+  animation-fill-mode: forwards;
+}
+.fadein7 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:2.6s;
+  animation-fill-mode: forwards;
+}
+.fadein8 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:3s;
+  animation-fill-mode: forwards;
+}
+.fadein9 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:3.4s;
+  animation-fill-mode: forwards;
+}
+.fadein10 {
+opacity:0;
+    animation: fadein 2s;
+  animation-delay:3.8s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.welcomeanim{
+
+  opacity:0;
+      animation:welcomeanim 2s;
+    animation-delay:2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcomeanim{
+  0% {
+      transform: translateX(100%) rotate(-120deg);
+    color: #DDAF26;
+  opacity:0;
+
+}
+
+30%{
+  transform: translateX(0%) translateY(-500%) rotate(110deg);
+
+}
+
+ 100%  {
+    transform: translateX(0px) translateY(150%) rotate(0deg);
+  color: white;
+      opacity:1;
+
+  }
+}
+
+
+.cscanim{
+
+  opacity:0;
+      animation:cscanim 2s;
+    animation-delay:.6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes cscanim{
+  0% {
+      transform: translateX(100%) translateY(20%);
+  opacity:0;
+
+}
+
+90%{
+  transform: translateX(-20%) translateY(20%);
+
+}
+ 100%  {
+    transform: translateX(0px) translateY(20%);
+      opacity:1;
+
+  }
+}
+
+.toprightanimation{
+  height:35vmin;
+margin-right: 3%;
+  width: auto;
+  font-size: 15vmin ;
+
+opacity:0;
+    animation:toprightanimation 2s;
+animation-delay:.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toprightanimation{
+0%{
+ transform: translateX(100%);
+      opacity:0;
+}
+
+90%{
+ transform: translateX(-12%);
+      opacity:1;
+}
+
+100%{
+
+transform: translateX:(0%);
+opacity:1;
+}
+}
+
+.noscroll{
+  overflow-x: none;
+  overflow-y: none;
+}
+
+.menupopanimation{
+  opacity:0;
+    animation:menupopanimation 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes menupopanimation{
+0%{
+opacity:0;
+width:15vmin;
+height:auto;
+}
+
+50%{
+width:20vmin;
+height:auto;
+}
+
+
+100%{
+opacity:1;
+width:15vmin;
+height:auto;
+}
+
+}
+
+head, body{
+    overflow-x: hidden;
+    width: 100%;
+    display:block;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    -o-user-select:none;
+}
+
+.verticalCenter{
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%)
+}
+
+.verticalCenter1{
+
+    position: absolute;
+    top: 50%;
+  right: 2vw;
+      transform: translate(0%, -50%);
+}
+
+.rtl{
+  direction:rtl;
+  margin-right:3vmin;
+  margin-left:3vmin;
+}
+
+.link{
+  color: inherit;
+  text-decoration:none;
+}
+
+.topleft{
+	position: absolute;
+  top: 5vmin;
+  left: 3vmin;
+}
+.topright{
+margin-top: 4vmin;
+margin-right:3vmin;
+}
+.bottomright{
+position: absolute;
+    bottom:5%;
+  right: 4%;
+
+}
+
+.extrasize{
+	font-size:1000%;
+}
+
+.extrasizemain{
+font-size:5vmin;
+}
+
+
+
+
+
+
+
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #DDAF26; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /* Disable horizontal scroll */
+    padding-top: 8vh;
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 5vh;
+    color: #000000;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #FFFFFF;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 7vh;
+    margin-left: 50px;
+}
