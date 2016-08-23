@@ -154,6 +154,11 @@ opacity:1;
 }
 }
 
+.goalsTextStyle{
+  float: inherit;
+transform: translateY(-25vmin);
+}
+
 
 .HHSLogoAnimation{
   height:37vh;
