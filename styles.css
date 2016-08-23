@@ -100,6 +100,11 @@
     float: right;
     font-size: 5.5vmin;
 }
+.bodyTextStyleSmaller {
+    color: white;
+    float: right;
+    font-size: 4.5vmin;
+}
 .menuStyle {
     position: absolute;
     float: left;
