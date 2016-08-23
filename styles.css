@@ -66,14 +66,68 @@
         opacity: 1;
     }
 }
-.welcomeanim {
+.titleTextStyle {
+    height: 18vmin;
+    width: auto;
+    margin-top: 2vmin;
+    margin-right: 3vmin;
+    font-size: 15vmin;
+    float: right;
+    opacity: 0;
+    animation: titleTextStyle 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+@keyframes titleTextStyle {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    90% {
+        transform: translateX(-12%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX: (0%);
+        opacity: 1;
+    }
+}
+.bodyTextStyle {
+    float: right;
+    font-size: 5vmin;
+}
+.menuStyle {
+    float: left;
+    margin-top: 2vmin;
+    margin-left: 3vmin;
+    opacity: 0;
+    animation: menuStyle 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes menuStyle {
+    0% {
+        opacity: 0;
+        width: 15vmin;
+        height: auto;
+    }
+    50% {
+        width: 20vmin;
+        height: auto;
+    }
+    100% {
+        opacity: 1;
+        width: 15vmin;
+        height: auto;
+    }
+}
+.welcomeTextStyle {
     margin-right: 3vmin;
     opacity: 0;
-    animation: welcomeanim 2s;
+    animation: welcomeTextStyle 2s;
     animation-delay: 2.5s;
     animation-fill-mode: forwards;
 }
-@keyframes welcomeanim {
+@keyframes welcomeTextStyle {
     0% {
         transform: translateX(100%) rotate(-120deg);
         color: #DDAF26;
@@ -88,14 +142,14 @@
         opacity: 1;
     }
 }
-.cscanim {
+.computerScienceClubStyle {
     margin-right: 3vmin;
     opacity: 0;
-    animation: cscanim 2s;
+    animation: computerScienceClubStyle 2s;
     animation-delay: .6s;
     animation-fill-mode: forwards;
 }
-@keyframes cscanim {
+@keyframes computerScienceClubStyle {
     0% {
         transform: translateX(100%) translateY(20%);
         opacity: 0;
@@ -107,35 +161,6 @@
         transform: translateX(0px) translateY(20%);
         opacity: 1;
     }
-}
-.toprightanimation {
-    height: 35vmin;
-    margin-top: 2%;
-    margin-right: 3%;
-    width: auto;
-    font-size: 13vmin;
-    opacity: 0;
-    animation: toprightanimation 2s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-}
-@keyframes toprightanimation {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    90% {
-        transform: translateX(-12%);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX: (0%);
-        opacity: 1;
-    }
-}
-.goalsTextStyle {
-    float: inherit;
-    transform: translateY(-25vmin);
 }
 .HHSLogoAnimation {
     height: 37vh;
@@ -160,60 +185,12 @@
         opacity: 1;
     }
 }
-.toprightanimation1 {
-    height: 18vmin;
-    margin-top: 2%;
-    margin-right: 3%;
-    width: auto;
-    font-size: 15vmin;
-    float: right;
-    opacity: 0;
-    animation: toprightanimation1 2s;
-    animation-delay: .2s;
-    animation-fill-mode: forwards;
-}
-@keyframes toprightanimation1 {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    90% {
-        transform: translateX(-12%);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX: (0%);
-        opacity: 1;
-    }
-}
 .noscroll {
     overflow-x: none;
     overflow-y: none;
 }
-.menupopanimation {
-    opacity: 0;
-    animation: menupopanimation 1s;
-    animation-fill-mode: forwards;
-}
-@keyframes menupopanimation {
-    0% {
-        opacity: 0;
-        width: 15vmin;
-        height: auto;
-    }
-    50% {
-        width: 20vmin;
-        height: auto;
-    }
-    100% {
-        opacity: 1;
-        width: 15vmin;
-        height: auto;
-    }
-}
 head, body {
     overflow-x: hidden;
-    width: 100%;
     display: block;
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -224,42 +201,23 @@ head, body {
 .verticalCenter {
     position: absolute;
     top: 50%;
+    right: 3%;
     transform: translate(0, -50%)
-}
-.verticalCenter1 {
-    position: absolute;
-    top: 50%;
-    right: 2vw;
-    transform: translate(0%, -50%);
 }
 .rtl {
     direction: rtl;
-    margin-right: 3vmin;
-    margin-left: 3vmin;
 }
 .link {
     color: inherit;
     text-decoration: none;
 }
-.topleft {
-    position: absolute;
-    top: 5vmin;
-    left: 3vmin;
-}
-.topright {
-    margin-top: 4vmin;
-    margin-right: 5vmin;
-}
-.bottomright {
+.bottomRightStyle {
     position: absolute;
     bottom: 5%;
     right: 4%;
 }
 .extrasize {
     font-size: 1000%;
-}
-.extrasizemain {
-    font-size: 5.5vmin;
 }
 .extrasizemain23 {
     font-size: 6.5vmin;
