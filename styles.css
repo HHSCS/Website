@@ -67,9 +67,9 @@
     }
 }
 .titleTextStyle {
-    margin-top: 2vmin;
-    margin-right: 3vmin;
-    font-size: 14vmin;
+    margin-top: 1.5%;
+    margin-right: 2%;
+    font-size: 13vmin;
     float: right;
     opacity: 0;
     animation: titleTextStyle 2s;
@@ -90,7 +90,13 @@
         opacity: 1;
     }
 }
+.bodyDivStyle {
+    margin-right: 3%;
+    width: 100%;
+    float: right;
+}
 .bodyTextStyle {
+    color: white;
     float: right;
     font-size: 5.5vmin;
 }
@@ -142,7 +148,6 @@
     }
 }
 .computerScienceClubStyle {
-    margin-right: 3vmin;
     opacity: 0;
     animation: computerScienceClubStyle 2s;
     animation-delay: .6s;
@@ -162,9 +167,32 @@
     }
 }
 .HHSLogoAnimation {
-    height: 37vh;
+    float: right;
+    height: 35vh;
     width: auto;
-    margin-right: 6vmin;
+    margin-right: 3%;
+    opacity: 0;
+    animation: HHSLogoAnimation 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+.SlackLogoAnimation {
+    float: right;
+    height: 10vmax;
+    width: auto;
+    margin-top: 1%;
+    margin-right: 3%;
+    opacity: 0;
+    animation: HHSLogoAnimation 2s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+.GitHubLogoAnimation {
+    float: right;
+    height: 35vmin;
+    width: auto;
+    margin-top: 1%;
+    margin-right: 3%;
     opacity: 0;
     animation: HHSLogoAnimation 2s;
     animation-delay: .2s;
@@ -184,10 +212,6 @@
         opacity: 1;
     }
 }
-.noscroll {
-    overflow-x: none;
-    overflow-y: none;
-}
 head, body {
     overflow-x: hidden;
     display: block;
@@ -196,6 +220,10 @@ head, body {
     -ms-user-select: none;
     user-select: none;
     -o-user-select: none;
+}
+.noscroll {
+    overflow-x: none;
+    overflow-y: none;
 }
 .verticalCenter {
     position: absolute;
