@@ -67,11 +67,9 @@
     }
 }
 .titleTextStyle {
-    height: 18vmin;
-    width: auto;
     margin-top: 2vmin;
     margin-right: 3vmin;
-    font-size: 15vmin;
+    font-size: 14vmin;
     float: right;
     opacity: 0;
     animation: titleTextStyle 2s;
@@ -94,9 +92,10 @@
 }
 .bodyTextStyle {
     float: right;
-    font-size: 5vmin;
+    font-size: 5.5vmin;
 }
 .menuStyle {
+    position: absolute;
     float: left;
     margin-top: 2vmin;
     margin-left: 3vmin;
