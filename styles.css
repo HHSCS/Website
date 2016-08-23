@@ -262,6 +262,17 @@ head, body {
     margin-left: 5vmin;
     float: right;
 }
+.homeMarquee {
+    position: absolute;
+    bottom: 3%;
+}
+.marqueeTextStyle {
+    opacity: .5;
+    font-size: 3vh;
+}
+marquee a {
+    margin-right: 8%;
+}
 
 /* The side navigation menu */
 
