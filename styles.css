@@ -68,7 +68,7 @@ opacity:0;
 }
 
 .welcomeanim{
-
+margin-right: 3vmin;
   opacity:0;
       animation:welcomeanim 2s;
     animation-delay:2.5s;
@@ -98,7 +98,7 @@ opacity:0;
 
 
 .cscanim{
-
+margin-right:3vmin;
   opacity:0;
       animation:cscanim 2s;
     animation-delay:.6s;
@@ -125,9 +125,10 @@ opacity:0;
 
 .toprightanimation{
   height:35vmin;
+    margin-top: 2%;
 margin-right: 3%;
   width: auto;
-  font-size: 15vmin ;
+  font-size: 13vmin ;
 
 opacity:0;
     animation:toprightanimation 2s;
@@ -136,6 +137,66 @@ animation-delay:.2s;
 }
 
 @keyframes toprightanimation{
+0%{
+ transform: translateX(100%);
+      opacity:0;
+}
+
+90%{
+ transform: translateX(-12%);
+      opacity:1;
+}
+
+100%{
+
+transform: translateX:(0%);
+opacity:1;
+}
+}
+
+
+.HHSLogoAnimation{
+  height:37vh;
+width: auto;
+margin-right:6vmin;
+opacity:0;
+    animation:HHSLogoAnimation 2s;
+animation-delay:.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes HHSLogoAnimation{
+0%{
+ transform: translateX(100%);
+      opacity:0;
+}
+
+90%{
+ transform: translateX(-12%);
+      opacity:1;
+}
+
+100%{
+
+transform: translateX:(0%);
+opacity:1;
+}
+}
+
+.toprightanimation1{
+  height:18vmin;
+  margin-top: 2%;
+margin-right: 3%;
+  width: auto;
+  font-size: 15vmin ;
+float: right;
+opacity:0;
+    animation:toprightanimation1 2s;
+animation-delay:.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes toprightanimation1{
 0%{
  transform: translateX(100%);
       opacity:0;
@@ -228,7 +289,7 @@ head, body{
 }
 .topright{
 margin-top: 4vmin;
-margin-right:3vmin;
+margin-right:5vmin;
 }
 .bottomright{
 position: absolute;
@@ -242,10 +303,20 @@ position: absolute;
 }
 
 .extrasizemain{
-font-size:5vmin;
+font-size:5.5vmin;
+}
+.extrasizemain23{
+font-size:6.5vmin;
+}
+.extrasize1{
+font-size:4vmin;
 }
 
-
+.textright{
+  margin-right:5vmin;
+  margin-left:5vmin;
+  float: right;
+}
 
 
 
