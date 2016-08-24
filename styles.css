@@ -58,6 +58,12 @@
     animation-delay: 3.8s;
     animation-fill-mode: forwards;
 }
+.fadeinmarquee {
+    opacity: 0;
+    animation: fadein 10s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
 @keyframes fadein {
     from {
         opacity: 0;
