@@ -111,6 +111,8 @@
     font-size: 4.5vmin;
 }
 .menuStyle {
+   width: 15vmin;
+        height: auto;
     position: absolute;
     float: left;
     margin-top: 2vmin;
